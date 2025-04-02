@@ -3,6 +3,6 @@ FROM node:16-alpine AS builder
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --legacy-peer-deps
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn build
