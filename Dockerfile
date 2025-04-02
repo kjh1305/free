@@ -7,4 +7,4 @@ RUN yarn install --production
 COPY . .
 RUN yarn build
 
-COPY --from=build /app .
+COPY --from=builder /app .
