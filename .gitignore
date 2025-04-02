@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+/coverage/
+.env
+.env.*
+.eslintcache
+.idea/
+.vscode/
+tmp/
+yarn-error.log
+# pnpm-lock.yaml
