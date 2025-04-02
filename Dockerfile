@@ -6,5 +6,3 @@ COPY package*.json ./
 RUN yarn install --production
 COPY . .
 RUN yarn build
-
-COPY --from=builder /app/dist ./
