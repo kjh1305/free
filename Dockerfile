@@ -3,14 +3,8 @@ FROM node:16-alpine AS builder
 
 WORKDIR /app
 COPY package*.json ./
-RUN yarn install
+RUN yarn install --production
 COPY . .
 RUN yarn build
 
-FROM alpine:latest
-
-WORKDIR /app/dist
-
-VOLUME /app/dist
-
-COPY --from=builder /app/dist .
+COPY --from=build-stage /app/dist /home/dev/nginx/usr/share/nginx/html
