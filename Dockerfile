@@ -7,4 +7,4 @@ RUN yarn install --production
 COPY . .
 RUN yarn build
 
-COPY --from=build-stage /app/dist /home/dev/nginx/usr/share/nginx/html
+COPY --from=build /app .
