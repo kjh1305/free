@@ -9,8 +9,6 @@ RUN yarn build
 
 FROM alpine:latest
 
-RUN mkdir /app/dist
-
 VOLUME /app/dist
 
 COPY --from=builder /app/dist /app/dist
