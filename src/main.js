@@ -13,7 +13,6 @@ import VueClipboard2 from 'vue-clipboard2';
 import { BootstrapVueIcons } from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 
-
 import "../src/design/app.scss";
 
 import 'bootstrap-vue/dist/bootstrap-vue.css'

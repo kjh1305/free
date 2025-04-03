@@ -4,12 +4,12 @@ export default [
   //정보관리
   {
     path: '/',
-    name: 'valid-keyword',
+    name: 'portfolio',
     meta: { authRequired: true },
-    component: () => import("./views/user/validKeyword")
+    component: () => import("./views/portfolio/index.vue"),
   },
   {
-    path: '/user/validKeyword',
+    path: '/validKeyword',
     name: 'valid-keyword',
     meta: { authRequired: true },
     component: () => import("./views/user/validKeyword")

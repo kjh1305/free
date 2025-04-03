@@ -75,11 +75,11 @@ export default {
     };
   },
   methods: {
-    // Methods used by the component go here
+    // Methods used by the components go here
     selectFood(food) {
       // Placeholder for what happens when a card is clicked
       // You could navigate to a details page, show a modal, etc.
-      // 'this' is implicitly bound to the component instance here
+      // 'this' is implicitly bound to the components instance here
       console.log('선택한 메뉴:', food.name);
       alert(`오늘 점심은 ${food.name} 어떠세요?`);
 
@@ -90,7 +90,7 @@ export default {
   },
   // You can add other Options API properties like computed, watch, mounted, etc. here
   // mounted() {
-  //   console.log('FoodRecommendation component mounted!');
+  //   console.log('FoodRecommendation components mounted!');
   //   // Fetch data from API here, for example:
   //   // this.fetchRecommendations();
   // }
